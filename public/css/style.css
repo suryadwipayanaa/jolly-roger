@@ -1,0 +1,1034 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Courier+Prime:wght@400;700&family=Fanwood+Text&family=Poppins:wght@100;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root{
+    --biru : #6e58fa;
+    --kuning : #fffa38;
+    --merah : #f4091f;
+    --putih : #ffff;
+    --hitam : rgba(255, 255, 255, 0);
+    --putih-tipis: #ded9cf;
+
+
+    --prime : 'Courier Prime', monospace;
+    --foward : 'Fanwood Text', serif;;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--prime);
+}
+
+/* NAVBAR START */
+
+nav{
+    transition: 1s ease all;
+}
+
+nav.jos{
+    background-color: var(--biru);
+    transition: 1s ease all;
+}
+
+
+#navbar .navbar{
+    padding: 10px;
+    z-index: 999;
+    align-items: center;
+}
+
+#navbar .navbar-brand{
+    font-size: 25px;
+    color: var(--putih);
+}
+
+#navbar nav ul li a{
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--putih);
+}
+
+
+#navbar .navbar span{
+    color: var(--kuning);
+}
+
+nav ul li{
+    position: relative;
+}
+
+
+nav ul li a::after{
+    width: 0%;
+    height: 2px;
+    display: block;
+    content: '';
+    background-color: var(--kuning);
+    margin: auto;
+    transition: 1s ease all;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* NAVBAR FINISH */
+
+
+/* HOME START */
+
+
+/* BENNER START */
+
+.benner{
+    position: relative;
+}
+
+.benner span{
+    color: var(--kuning);
+}
+
+.benner .gambar{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.benner .gambar img{
+    width: 100%;
+    height: 100%;
+}
+
+.benner .gambar::after{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: rgba(0,0,0,.6);
+}
+
+.benner .welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: var(--putih);
+}
+
+.benner .welcome h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.benner a{
+    position: relative;
+    text-decoration: none;
+    color: var(--putih);
+    border: 1px solid var(--putih);
+    padding: 13px 36px;
+    border-radius: 5px;
+    transition: 1s ease all;
+    background-color: transparent;
+}
+
+.benner a:after{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    right: -20px;
+    top: 50%;
+    border-top: 1px solid var(--putih);
+}
+
+.benner a::before{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    left: -20px;
+    top: 50%;
+    border-top: 1px solid var(--putih);
+}
+
+.benner a:hover{
+    background-color: var(--kuning);
+    color: var(--black);
+    border: 1px solid var(--kuning);
+    z-index: 9;
+}
+
+.benner .welcome p{
+    margin: 20px 0 40px 0;
+    padding: 0 100px;
+    color: var(--black);
+}
+
+
+/* PROMOTION START */
+
+.promotion .row{
+    display: flex;
+    justify-content: center;
+}
+
+.promotion{
+    margin-top: 100px;
+    color: var(--black);
+    position: relative;
+}
+
+.promotion h2{
+    font-weight: bold;
+}
+
+.promotion .card p{
+    font-size: 15px;
+    color: var(--black);
+}
+
+.promotion .card{
+    cursor: pointer;
+    transition: 1s ease all;
+    overflow: hidden;
+}
+
+.promotion .card:hover{
+    box-shadow: 2px 2px 10px rgba(0,0,0,.6);
+}
+
+.promotion .card:hover img{
+    transform: scale(1.1);
+}
+
+.promotion span{
+    color: var(--biru);
+    font-weight: bold;
+}
+
+.promotion img{
+    overflow: hidden;
+    transition: 1s ease all;
+}
+
+.promotion a{
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px 26px;
+    border-radius: 7px;
+    display: block;
+    width: fit-content;
+    position: relative;
+    transition: 1s ease all;
+    background-color: var(--kuning);
+}
+
+.promotion a:hover{
+    background-color: var(--biru);
+    color: var(--putih);
+    border: 1px solid var(--biru);
+    z-index: 9;
+}
+
+.promotion .awal span{
+    text-decoration: line-through;
+    font-weight: 100;
+    color: var(--black);
+}
+
+.promotion .diskon span{
+    font-weight: bold;
+    color: var(--black);
+}
+
+.promotion .hot{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.promotion .hot p{
+    background-color: var(--kuning);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.6);
+    font-weight: bold;
+}
+
+/* PROMOTION FINISH */
+
+
+/* COURSE WE OPEN START */
+
+.course{
+    margin-top: 100px;
+    background-color: var(--biru);
+    padding: 30px;
+    color: var(--putih);
+}
+
+.course span{
+    color: var(--kuning);
+}
+
+.course .judul{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.course h2{
+    font-weight: bold;
+}
+
+.course h5{
+    font-weight: bold;
+}
+
+.course .row .card{
+    color: black;
+}
+
+.course .btn{
+    background-color: var(--biru);
+    color: var(--putih);
+    transition: 1s ease all;
+}
+
+.course .btn:hover{
+    background-color: var(--kuning);
+    color: var(--black);
+    border: 1px solid var(--kuning);
+}
+
+.course img{
+    height: 320px;
+}
+
+.course p{
+    color: var(--black);
+    font-size: 0.9em;
+}
+/* COURSE WE OPEN FINISHH */
+
+
+/* GLOBAL OUR COLLAGE */
+
+.global{
+    margin-top: 100px;
+}
+
+.global span{
+    color: var(--biru);
+}
+
+.global h2{
+    color: var(--black);
+    font-weight: bold;
+}
+
+.global .row h5{
+    color: var(--putih);
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.global .row p{
+    color: var(--putih);
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.global .card{
+    position: relative;
+    border: none;
+}
+
+.global img{
+    cursor: pointer;
+    border-radius: 13px;
+}
+
+.global .text-global{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    transition: 1s ease all;
+    cursor: pointer;
+    border-radius: 13px;
+}
+
+.global .text-global:hover{
+    background-color: rgb(244, 22, 69,.6);
+    border: 1px solid rgb(244, 22, 69,.6);
+}
+
+.global .text-global .sub-text{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    transition: 1s ease all;
+    opacity: 0;
+}
+
+.global .card:hover .sub-text{
+    bottom: 25%;
+    opacity: 1;
+}
+
+/* AKHIR GLOBAL OUR COLLAGE */
+
+
+/* FASILITAS START HERE  */
+
+.fasilites{
+    margin-top: 100px;
+    background-color: var(--biru);
+    padding: 30px;
+    color: var(--putih);
+}
+
+.fasilites h2{
+    font-weight: bold;
+}
+
+.fasilites span{
+    color: var(--kuning);
+}
+
+.fasilites .card{
+    color: black;
+}
+
+.fasilites h5{
+    font-weight: bold;
+}
+
+.fasilites .btn{
+    background-color: var(--biru);
+    transition: 1s ease all;
+}
+
+.fasilites .btn:hover{
+    background-color: var(--kuning);
+    border: 1px solid var(--kuning);
+    color: var(--black);
+}
+
+.fasilites img{
+    height: 320px;
+}
+
+.fasilites p{
+    color: var(--black);
+    font-size: 0.9em;
+}
+/* FASILITAS STOP HERE */
+
+
+
+/* WHAT OUR STUDENT SAY START */
+.say{
+    margin-top: 100px;
+}
+
+.say .judul{
+    text-align: center;
+}
+
+.say .judul h2{
+    font-weight: bold;
+}
+
+.say .judul span{
+    color: var(--biru);
+}
+
+.say .people{
+    background-color:var(--putih-tipis);
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.say .people p{
+    color: var(--black);
+    font-size: 0.9em;
+}
+
+.say .bi-star-fill{
+    color: orange;
+}
+
+.say .bi-star-half{
+    color: orange;
+}
+
+.say .profile{
+    width: 30%;
+}
+
+.say .profile-text{
+    width: 70%;
+}
+
+.say .row{
+    justify-content: space-around;
+}
+
+
+/* WHAT OUR STUDENT SAY FINISH */
+
+
+/* ONLINE START */
+
+.online{
+    margin-top: 70px;
+    position: relative;
+}
+
+.online .gambar{
+    width: 100%;
+    height: 450px;
+    border-radius: 13px;
+    position: relative;
+}
+
+.online .gambar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+}
+
+.online .gambar:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    content: '';
+    display: block;
+    border-radius: 13px;
+}
+
+.online .text-online{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    width: fit-content;
+}
+
+.online h2{
+    color: var(--putih);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0,0,0,.5);
+}
+
+.online a{
+    position: relative;
+    text-decoration: none;
+    color: var(--putih);
+    border: 1px solid var(--putih);
+    padding: 13px 36px;
+    border-radius: 5px;
+    transition: 1s ease all;
+    background-color: transparent;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    margin-top: 40px;
+}
+
+.online a:after{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    right: -20px;
+    top: 50%;
+    border-top: 1px solid var(--putih);
+}
+
+.online a::before{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    left: -20px;
+    top: 50%;
+    border-top: 1px solid var(--putih);
+}
+
+.online a:hover{
+    background-color: var(--kuning);
+    color: var(--black);
+    border: 1px solid var(--kuning);
+    z-index: 9;
+}
+
+.online span{
+    color: var(--kuning);
+}
+
+/* ONLINE FINISH */
+
+
+/* FOOTER START IN */
+.footer{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.footer h5{
+    font-weight: 800;
+    color: var(--black);
+}
+
+.footer p{
+    color: var(--black);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.footer ul li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 1s ease all;
+    font-size: 1.2em;
+}
+
+
+.footer ul li:hover{
+    transform: rotate(360deg);
+}
+
+.footer .bi-heart-fill{
+    color: var(--merah);
+}
+
+/* FOOTER FINISHED */
+
+
+
+/* ABOUT START BROHTER */
+
+/* ABOUT BENNER START */
+
+.about .gambar{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+
+.about .gambar img{
+    width: 100%;
+    height: 100%;
+}
+
+.about .gambar::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    display: block;
+    content: '';
+}
+
+.about h1{
+    color: var(--putih);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0,0,0,.5);
+}
+
+.about span{
+    color: var(--kuning);
+}
+/* ABOUT BENNER FINISH */
+
+/* COLLAGE ABOUT START BROH */
+
+.collage-about{
+    margin-top: 70px;
+}
+
+.collage-about a{
+    position: relative;
+    text-decoration: none;
+    color: var(--biru);
+    border: 1px solid var(--biru);
+    padding: 13px 36px;
+    border-radius: 5px;
+    transition: 1s ease all;
+    background-color: transparent;
+    margin-top: 20px;
+    display: block;
+    width: fit-content;
+}
+
+.collage-about a:after{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    right: -20px;
+    top: 50%;
+    border-top: 1px solid var(--biru);
+}
+
+.collage-about a::before{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    left: -20px;
+    top: 50%;
+    border-top: 1px solid var(--biru);
+}
+
+.collage-about a:hover{
+    background-color: var(--kuning);
+    color: var(--black);
+    border: 1px solid var(--kuning);
+    z-index: 9;
+}
+
+.collage-about p{
+    color: var(--black);
+    font-size: .9em;
+}
+
+.collage-about h2{
+    color: var(--black);
+    font-weight: 500;
+}
+
+.collage-about span{
+    color: var(--biru);
+}
+
+
+/* COLLAGE ABOUT FINISH BROH */
+
+/* ABOUT FINISH BROHTER */
+
+
+
+/* BLOG NAVBAR STARTT BROTHER */
+
+.graduation {
+    margin-top: 70px;
+}
+
+.graduation ul a{
+    text-decoration: none;
+    transition: 1s ease all;
+}
+
+.graduation ul li a:hover{
+    color: var(--kuning);
+}
+.graduation ul li{
+    list-style: none;
+    position: relative;
+    margin-top: 10px;
+    color: var(--biru);
+    
+}
+
+.graduation ul h5{
+    background-color: var(--biru);
+    color: var(--putih);
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 5px solid var(--merah);
+    border-right: 1px solid var(--merah);
+}
+
+.graduation ul span{
+    position: absolute;
+    right: 0;
+}
+
+.graduation .certif{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.graduation p{
+    text-align: justify;
+}
+
+.graduation .komen a{
+    position: relative;
+    text-decoration: none;
+    color: var(--biru);
+    border: 1px solid var(--biru);
+    padding: 13px 36px;
+    border-radius: 5px;
+    transition: 1s ease all;
+    background-color: transparent;
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+}
+
+.graduation .komen a:after{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    right: -20px;
+    top: 50%;
+    border-top: 1px solid var(--biru);
+}
+
+.graduation .komen a::before{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    left: -20px;
+    top: 50%;
+    border-top: 1px solid var(--biru);
+}
+
+.graduation .komen a:hover{
+    background-color: var(--putih-tipis);
+    color: var(--black);
+    border: 1px solid var(--putih-tipis);
+    z-index: 9;
+}
+
+.graduation p{
+    color: var(--black);
+    font-size: .9em;
+}
+
+.graduation .komen{
+    border: 2px solid var(--putih-tipis);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.graduation input{
+    background-color: var(--putih-tipis);
+}
+
+.graduation textarea{
+    background-color: var(--putih-tipis);
+}
+
+.graduation .komen h5{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+/* BLOG NAVBAR FINISH BROTHER */
+
+
+/* CONTACT US START BROTHER */
+.maps{
+    margin-top: 70px;
+}
+
+.maps h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.maps span{
+    color: var(--biru);
+}
+
+.send{
+    margin-top: 70px;
+}
+
+.send .box{
+    margin-bottom: 20px;
+}
+
+.send .row .box{
+    display: flex;
+}
+
+.send .bi-house-door-fill, .send .bi-telephone-fill, .send .bi-envelope-fill{
+    color: var(--biru);
+    font-size: 2.5em;
+}
+
+.send .row  .box .col-kiri{
+    width: 10%;
+}
+.send .row  .box .col-kanan{
+    width: 90%;
+}
+
+.send a{
+    position: relative;
+    text-decoration: none;
+    color: var(--biru);
+    border: 1px solid var(--biru);
+    padding: 13px 36px;
+    border-radius: 5px;
+    transition: 1s ease all;
+    background-color: transparent;
+    margin-top: 30px;
+    display: block;
+    width: fit-content;
+}
+
+.send a:after{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    right: -20px;
+    top: 50%;
+    border-top: 1px solid var(--biru);
+}
+
+.send a::before{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: '';
+    left: -20px;
+    top: 50%;
+    border-top: 1px solid var(--biru);
+}
+
+.send a:hover{
+    background-color: var(--biru);
+    color: var(--putih);
+    border: 1px solid var(--biru);
+    z-index: 9;
+}
+
+
+/* CONTACT US STOP BROTHER */
+
+
+
+@media screen and (max-width:990px){
+    .benner .welcome h1{
+        font-size: 30px;
+    }
+
+    .benner .welcome p{
+        padding: 10px;
+    }
+
+    .course .judul{
+        width: 100%;
+    }
+
+    .graduation .katagori{
+        order: 1;
+        margin-top: -50px;
+        margin-right: 40px;
+    }
+
+    .graduation .gradu{
+        order: 2;
+        margin-top: 40px;
+    }
+
+    .collage-about .img-about{
+        margin-top: 30px;
+    }
+
+    .collage-about{
+        text-align: center;
+    }
+
+    .collage-about .text-about a{
+        margin: 0 auto;
+    }
+
+    .about h1{
+        font-size: 3em;
+        width: fit-content;
+    }
+
+    .graduation .btnBlog{
+        margin: auto;
+    }
+
+    .send .row .box .col-kanan{
+        width: 85%;
+    }
+
+    .send .row .box .col-kiri{
+        width: 15%;
+    }
+
+    .send a{
+        margin: 30px auto;
+
+    }
+
+
+}
+
+
+
+@media screen and (max-width:750px){
+    .benner .welcome{
+        width: 100%;
+    }
+    .benner .welcome h1{
+        font-size: 30px;
+    }
+
+    .benner .welcome p{
+        padding: 0 40px;
+    }
+
+    .say .row{
+        padding: 10px;
+    }
+
+    
+}
+
+
+
+
+/* BENER FINISH */
+/* HOME FINISH */
+
+
+
+html{
+   scroll-behavior: smooth;
+}
